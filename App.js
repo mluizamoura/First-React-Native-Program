@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Caminhos from './routes/caminhos';
+import Caminhos from './routes/Caminhos';
 import { NavigationContainer } from '@react-navigation/native';
 
 

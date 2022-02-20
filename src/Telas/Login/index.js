@@ -1,8 +1,6 @@
-import { NavigationContainer } from '@react-navigation/native';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { 
-    View, 
-    KeyboardAvoidingView, 
+    View,  
     Image, 
     TextInput, 
     TouchableOpacity, 
@@ -26,23 +24,23 @@ return (
     source={require('../../../src/assets/login.png')} //caminho da imagem
 
     />
-<TextInput
+<TextInput 
+placeholderTextColor={'#969696'}
 style={styles.input}
 placeholder="e-mail"
 autoCorrect={false}
 onChangeText={()=> {}} //pra não precisar salvar em nenhum local
 />
     
-<TextInput value='email'
+<TextInput 
+placeholderTextColor={'#969696'}
 style={styles.input}
-//placeholder="senha"
+placeholder="senha"
 autoCorrect={false}
 onChangeText={()=> {}} //pra não precisar salvar em nenhum local
 />
 
-<TouchableOpacity style={styles.btnSubmit} onPress={() => navigation.navigate('Tela2')
-
-} >
+<TouchableOpacity style={styles.btnSubmit} onPress={() => navigation.navigate("Routestab")}>
 
 <Text style={styles.submitText}>ENTRAR</Text>
 
@@ -85,8 +83,9 @@ input:{
   borderRadius: 7,
   padding: 10,
   fontSize: 18,
- 
- 
+  color: '#000000'
+  
+
   
 },
 btnSubmit:{
@@ -108,7 +107,7 @@ submitText:{
 Image:{
   height: 228,
   width: 228,
-}
+},
 
 
 });
