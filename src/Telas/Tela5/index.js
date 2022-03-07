@@ -30,7 +30,7 @@ const {
   return (
     <View style={StyleTela5.tela}>
         <TouchableOpacity style={StyleTela5.setaReturn} onPress={() => navigation.goBack()}> 
-        <SetaReturn name="leftcircle" size={35} color={"#304FFE"}/>
+        <SetaReturn name="leftcircle" size={35} color={"#ff1493"}/>
         </TouchableOpacity>
       <View style = {StyleTela5.box2}>
       <Relogio style={StyleTela5.relogio1} name="timer" color={'gray'} size={20} />

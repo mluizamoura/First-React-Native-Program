@@ -12,12 +12,24 @@ import Caminhos2 from '../routes/Caminhos2'
 const Tab = createBottomTabNavigator();
 
 function Routetab() {
+    const Tela6 = () => <View/> 
 return (
 
 <Tab.Navigator screenOptions={{tabBarShowLabel: false, headerShown: false}}>
-<Tab.Screen options={{tabBarIcon: () => <Icone name="home" color={"#304FFE"} size={24} />, headerShown: false}} name="home" component={Tela2} />
-<Tab.Screen options={{tabBarIcon: () => <Icone2 name="pluscircle" color={"#304FFE"} size={35} />,headerShown: false}} name="Caminhos2" component={Caminhos2} />
-<Tab.Screen options={{tabBarIcon: () => <Icone3 name="list" color={"#304FFE"} size={24} />,headerShown: false}} name= "tela4" component={Tela4}/>
+<Tab.Screen options={{tabBarIcon: () => <Icone name="home" color={"#ff1493"} size={24} />, headerShown: false}} name="home" component={Tela2} />
+<Tab.Screen options={{tabBarIcon: () => <Icone2 name="pluscircle" color={"#ff1493"} size={35} />,headerShown: false}} name="Caminhos2" component={Caminhos2} />
+<Tab.Screen 
+options={{tabBarIcon: () => <Icone3 name="list" color={"#ff1493"} size={24} />
+,headerShown: false}} name= "Tela6"component={Tela6}
+listeners={({navigation}) => ({
+    tabPress: (e) => {
+      e.preventDefault(
+          navigation.navigate('Modal')
+      )  
+    }
+
+})}
+/>
 </Tab.Navigator>
 );
 }

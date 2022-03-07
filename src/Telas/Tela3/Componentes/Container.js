@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Image, TouchableOpacity } from 'react-native'
+import {Text, View, Image, TouchableOpacity, Modal } from 'react-native'
 import Styletela3 from '../Style/StyleTela3';
 import Iconefesta from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ponto from 'react-native-vector-icons/FontAwesome';
@@ -32,8 +32,10 @@ function Container ({
 
                 <View style={Styletela3.caixa1}>
 
+            
                     <Image style={Styletela3.image} source={img} />
                     <Text style={Styletela3.textoprincipal}>{data}</Text> 
+                    
                     <Text  style={
 
             (StyleTela3.textosentimento,
@@ -50,13 +52,13 @@ function Container ({
             }>
         {''}
         {humor}{''}
+        
             </Text>
-
+            
                     <Text style={Styletela3.textosentimento}>{humor}</Text>
                     <Text style={Styletela3.textohorario}>{hora}</Text>
                     </View>
-
-                <View style={Styletela3.caixa2}>
+    <View style={Styletela3.caixa2}>
                     <Iconefesta name= {icone1} color={"#000000"} size={20} />
                     <Text style={Styletela3.ColorText1}>{acao1}</Text> 
 
