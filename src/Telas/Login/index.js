@@ -35,10 +35,13 @@ onChangeText={()=> {}} //pra não precisar salvar em nenhum local
 <TextInput 
 placeholderTextColor={'#969696'}
 style={styles.input}
-placeholder="senha"
-autoCorrect={false}
+placeholder= "senha"
+autoCorrect={false} //corretor 
+secureTextEntry={true}
 onChangeText={()=> {}} //pra não precisar salvar em nenhum local
 />
+
+
 
 <TouchableOpacity style={styles.btnSubmit} onPress={() => navigation.navigate("Routestab")}>
 
@@ -47,7 +50,7 @@ onChangeText={()=> {}} //pra não precisar salvar em nenhum local
 </TouchableOpacity>
 </View>
 
- </View> //subir o input com o teclado
+ </View> 
    );
 }
 
@@ -71,7 +74,7 @@ const styles = StyleSheet.create({
        flex:1,
        alignItems: 'center',
        justifyContent: 'center',
-       paddingBottom: 50,
+       paddingBottom: 30,
       
 
    },

@@ -16,7 +16,6 @@ import Icon from 'react-native-vector-icons/Ionicons'
 
 
 
-
   function Tela4({navigation}) {
    const [atividades, setAtividades] = useState([]);
    useEffect(() => {
@@ -125,8 +124,8 @@ return(
       </View>
 </Modal>
 
-)}
-
+)
+      }
 const styles = StyleSheet.create({
 
   textoPrincipal: {
@@ -134,15 +133,16 @@ const styles = StyleSheet.create({
     fontSize: 25,
     textAlign: 'center',
     fontWeight: 'bold',
+    
   },
 
   textoData: {
     color: '#969696',
     fontSize: 15,
     textAlign: 'center',
-
     marginRight: 30,
-  },
+ },
+
   caixa1: {
     width: '90%',
     height: 100,
@@ -172,7 +172,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     marginTop: 30,
-    
   },
 
   textoCaixa3: {
@@ -186,7 +185,7 @@ const styles = StyleSheet.create({
 
   estiloBotao:{
    flexDirection:'column',
-   alignItems: 'center'
+   alignItems: 'center',
    
   },
   caixa4:{
@@ -197,6 +196,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 10,
     alignItems: 'center',
+    
     
     
   },
@@ -210,6 +210,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 10,
     
+    
   },
   
   
@@ -217,5 +218,3 @@ const styles = StyleSheet.create({
 });
 
 export default Tela4;
-
-

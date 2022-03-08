@@ -68,9 +68,11 @@ function Activities ({name}){
         alignItems: 'center',
         
         
+        
    },
 
     estiloContainer: {
+        
         
       
 
