@@ -8,26 +8,24 @@ import {
   Button,
   Modal,
   FlatList,
-  TextInput} from 'react-native';
+  TextInput,}from 'react-native';
 import Clock from 'react-native-vector-icons/AntDesign';
 import Calendar from 'react-native-vector-icons/AntDesign';
 import Api from '../../Services/Api';
 import Activities from './Activities';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-
-  function Tela4({navigation}) {
+function Tela4({navigation}) {
   const [data, setData] = useState('');
   const [horas, setHoras] = useState('');
   const [atividades, setAtividades] = useState([]);
-  
 
   function zeroMinuto(n) {
     return n < 10 ? `0${n}` : `${n}`;
   }
 
   useEffect(() => {
-    let date = new Date().getDate()-1;
+    let date = new Date().getDate() - 1;
 
     let month = new Date().getMonth();
 
@@ -57,13 +55,12 @@ import Icon from 'react-native-vector-icons/Ionicons';
       'dezembro',
     );
 
-    let hours = new Date().getTimezoneOffset()+23;
+    let hours = new Date().getTimezoneOffset() + 23;
 
     let minut = zeroMinuto(new Date().getMinutes());
 
     setData('HOJE,' + date + ' DE ' + meses[month].toUpperCase());
-    
-    
+
     setHoras(hours + ':' + minut);
 
     return () => {};
@@ -170,8 +167,6 @@ import Icon from 'react-native-vector-icons/Ionicons';
   );
 }
 
-
-
 const styles = StyleSheet.create({
   textoPrincipal: {
     color: '#000000',
@@ -234,7 +229,7 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     height: 200,
     marginTop: 30,
-    borderColor: '#000000',
+    borderColor: '#000',
     borderWidth: 2,
     borderRadius: 10,
     alignItems: 'center',
