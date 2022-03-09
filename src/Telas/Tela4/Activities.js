@@ -63,18 +63,14 @@ function Activities ({name}){
 
    
     flatListStyle: {
-        margin: 10,
-        padding: 1,
+        flex: 1,
+        margin:11,
         alignItems: 'center',
-        
-        
-        
+        justifyContent: 'center',
+ 
    },
 
     estiloContainer: {
-        
-        
-      
 
    }
 

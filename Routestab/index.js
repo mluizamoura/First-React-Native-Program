@@ -17,19 +17,18 @@ return (
 
 <Tab.Navigator screenOptions={{tabBarShowLabel: false, headerShown: false}}>
 <Tab.Screen options={{tabBarIcon: () => <Icone name="home" color={"#ff1493"} size={24} />, headerShown: false}} name="home" component={Tela2} />
-<Tab.Screen options={{tabBarIcon: () => <Icone2 name="pluscircle" color={"#ff1493"} size={35} />,headerShown: false}} name="Caminhos2" component={Caminhos2} />
-<Tab.Screen 
-options={{tabBarIcon: () => <Icone3 name="list" color={"#ff1493"} size={24} />
+
+<Tab.Screen options={{tabBarIcon: () => <Icone2 name="pluscircle" color={"#ff1493"} size={24} />
 ,headerShown: false}} name= "Tela6"component={Tela6}
 listeners={({navigation}) => ({
-    tabPress: (e) => {
-      e.preventDefault(
+    tabPress: e => {
+      e.preventDefault()
           navigation.navigate('Modal')
-      )  
+      
     }
-
 })}
 />
+<Tab.Screen options={{tabBarIcon: () => <Icone3 name="list" color={"#ff1493"} size={35} />,headerShown: false}} name="Caminhos2" component={Caminhos2} />
 </Tab.Navigator>
 );
 }
